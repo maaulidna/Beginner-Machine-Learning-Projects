@@ -42,23 +42,46 @@ Menggunakan algoritma klasifikasi untuk memprediksi kategori atau kelas dari dat
 ```
 proyek-machine-learning-pemula/
 │
+├── README.md
+│   └── Dokumentasi proyek
+│
 ├── [Clustering]_Submission_Akhir_BMLP_MC009d5X2352 (2).ipynb
-│   └── Notebook untuk analisis clustering
+│   └── Notebook utama untuk analisis clustering
 │
 ├── [Klasifikasi]_Submission_Akhir_BMLP_MC009D5X2352 (4).ipynb
-│   └── Notebook untuk analisis klasifikasi
+│   └── Notebook utama untuk analisis klasifikasi
 │
-└── README.md
-    └── Dokumentasi proyek
+├── Clustering/
+│   ├── data_clustering (2).csv
+│   │   └── Dataset untuk clustering
+│   ├── data_clustering_inverse (6).csv
+│   │   └── Dataset hasil inverse transform
+│   ├── model_clustering (2).h5
+│   │   └── Model clustering yang tersimpan
+│   └── PCA_model_clustering (1).h5
+│       └── Model PCA untuk dimensionality reduction
+│
+└── Klasifikasi/
+    ├── decision_tree_model (2).h5
+    │   └── Model Decision Tree
+    ├── explore_LogisticRegression_classification (2).h5
+    │   └── Model Logistic Regression
+    └── tuning_classification (3).h5
+        └── Model hasil hyperparameter tuning
 ```
 
 ## 📊 Dataset
 
 Proyek ini menggunakan dataset yang sesuai dengan kebutuhan masing-masing teknik:
-- **Clustering**: Dataset untuk analisis pengelompokan
-- **Klasifikasi**: Dataset dengan label untuk pembelajaran supervised
 
-> **Catatan**: Pastikan dataset tersedia sebelum menjalankan notebook.
+### Clustering
+- `data_clustering (2).csv` - Dataset utama untuk analisis clustering
+- `data_clustering_inverse (6).csv` - Dataset hasil inverse transformation dari proses normalisasi
+
+### Klasifikasi
+- Dataset untuk klasifikasi (embedded dalam notebook atau diunduh otomatis)
+
+> **Catatan**: Dataset clustering sudah tersedia dalam repository. Pastikan path dataset sesuai saat menjalankan notebook.
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -76,6 +99,7 @@ Proyek ini menggunakan dataset yang sesuai dengan kebutuhan masing-masing teknik
   
 - **Machine Learning**:
   - Scikit-learn
+  - TensorFlow/Keras (untuk save/load model .h5)
   
 - **Development**:
   - Jupyter Notebook
@@ -104,8 +128,10 @@ source venv/bin/activate
 ### 3. Install Dependencies
 
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn jupyter
+pip install numpy pandas matplotlib seaborn scikit-learn jupyter tensorflow
 ```
+
+> **Catatan**: TensorFlow/Keras diperlukan untuk loading model .h5
 
 Atau jika ada file requirements.txt:
 
@@ -150,16 +176,35 @@ jupyter notebook
 ## 📈 Hasil dan Analisis
 
 ### Clustering
-- **Algoritma yang digunakan**: [Sebutkan algoritma, misal: K-Means]
-- **Jumlah cluster optimal**: [Sebutkan jumlah]
-- **Metrik evaluasi**: [Sebutkan metrik dan nilainya]
-- **Insight**: [Temuan penting dari clustering]
+Proyek clustering mengimplementasikan berbagai teknik:
+
+- **Dimensionality Reduction**: Menggunakan PCA (Principal Component Analysis)
+  - Model: `PCA_model_clustering (1).h5`
+  - Tujuan: Mengurangi dimensi fitur untuk visualisasi dan efisiensi komputasi
+
+- **Model Clustering**: 
+  - Model tersimpan: `model_clustering (2).h5`
+  - Menghasilkan pengelompokan data berdasarkan pola yang ditemukan
+  
+- **Dataset Output**:
+  - `data_clustering_inverse (6).csv` - Data hasil inverse transform untuk interpretasi
 
 ### Klasifikasi
-- **Algoritma yang digunakan**: [Sebutkan algoritma, misal: Random Forest]
-- **Accuracy**: [Sebutkan akurasi]
-- **Precision/Recall/F1-Score**: [Sebutkan nilai]
-- **Insight**: [Temuan penting dari klasifikasi]
+Proyek klasifikasi mengeksplorasi beberapa algoritma:
+
+- **Decision Tree**:
+  - Model: `decision_tree_model (2).h5`
+  - Algoritma tree-based untuk klasifikasi
+
+- **Logistic Regression**:
+  - Model: `explore_LogisticRegression_classification (2).h5`
+  - Algoritma klasifikasi linear
+
+- **Hyperparameter Tuning**:
+  - Model: `tuning_classification (3).h5`
+  - Model hasil optimasi hyperparameter untuk performa terbaik
+
+> **Catatan**: Semua model disimpan dalam format .h5 untuk kemudahan deployment dan reusability.
 
 ## 🤝 Kontribusi
 
