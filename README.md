@@ -1,91 +1,91 @@
-# Proyek Machine Learning Pemula
+# Beginner Machine Learning Projects
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Repositori ini berisi submission akhir untuk kursus **Belajar Machine Learning untuk Pemula** dari Dicoding. Proyek ini mengimplementasikan dua pendekatan machine learning: **Clustering** dan **Klasifikasi**.
+This repository contains the final submission for the **Beginner Machine Learning** course from Dicoding. The project implements two machine learning approaches: **Clustering** and **Classification**.
 
-## 📚 Daftar Isi
+## 📚 Table of Contents
 
-- [Tentang Proyek](#tentang-proyek)
-- [Struktur Proyek](#struktur-proyek)
+- [About The Project](#about-the-project)
+- [Project Structure](#project-structure)
 - [Dataset](#dataset)
-- [Teknologi yang Digunakan](#teknologi-yang-digunakan)
-- [Instalasi](#instalasi)
-- [Cara Menggunakan](#cara-menggunakan)
-- [Hasil dan Analisis](#hasil-dan-analisis)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
-- [Kontak](#kontak)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results and Analysis](#results-and-analysis)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-## 🎯 Tentang Proyek
+## 🎯 About The Project
 
-Proyek ini merupakan implementasi dua teknik machine learning fundamental:
+This project demonstrates the implementation of two fundamental machine learning techniques:
 
 ### 1. **Clustering (Unsupervised Learning)**
-Menggunakan algoritma clustering untuk mengelompokkan data tanpa label. Teknik ini berguna untuk:
-- Segmentasi pelanggan
-- Analisis pola data
-- Deteksi anomali
-- Eksplorasi data
+Uses clustering algorithms to group unlabeled data. This technique is useful for:
+- Customer segmentation
+- Data pattern analysis
+- Anomaly detection
+- Data exploration
 
-### 2. **Klasifikasi (Supervised Learning)**
-Menggunakan algoritma klasifikasi untuk memprediksi kategori atau kelas dari data berdasarkan fitur-fitur yang ada. Teknik ini berguna untuk:
-- Prediksi kategori
-- Pengambilan keputusan otomatis
+### 2. **Classification (Supervised Learning)**
+Uses classification algorithms to predict categories or classes from data based on existing features. This technique is useful for:
+- Category prediction
+- Automated decision making
 - Pattern recognition
-- Analisis prediktif
+- Predictive analysis
 
-## 📁 Struktur Proyek
+## 📁 Project Structure
 
 ```
 proyek-machine-learning-pemula/
 │
 ├── README.md
-│   └── Dokumentasi proyek
+│   └── Project documentation
 │
 ├── [Clustering]_Submission_Akhir_BMLP_MC009d5X2352 (2).ipynb
-│   └── Notebook utama untuk analisis clustering
+│   └── Main notebook for clustering analysis
 │
 ├── [Klasifikasi]_Submission_Akhir_BMLP_MC009D5X2352 (4).ipynb
-│   └── Notebook utama untuk analisis klasifikasi
+│   └── Main notebook for classification analysis
 │
 ├── Clustering/
 │   ├── data_clustering (2).csv
-│   │   └── Dataset untuk clustering
+│   │   └── Dataset for clustering
 │   ├── data_clustering_inverse (6).csv
-│   │   └── Dataset hasil inverse transform
+│   │   └── Inverse transformed dataset
 │   ├── model_clustering (2).h5
-│   │   └── Model clustering yang tersimpan
+│   │   └── Saved clustering model
 │   └── PCA_model_clustering (1).h5
-│       └── Model PCA untuk dimensionality reduction
+│       └── PCA model for dimensionality reduction
 │
 └── Klasifikasi/
     ├── decision_tree_model (2).h5
-    │   └── Model Decision Tree
+    │   └── Decision Tree model
     ├── explore_LogisticRegression_classification (2).h5
-    │   └── Model Logistic Regression
+    │   └── Logistic Regression model
     └── tuning_classification (3).h5
-        └── Model hasil hyperparameter tuning
+        └── Hyperparameter tuned model
 ```
 
 ## 📊 Dataset
 
-Proyek ini menggunakan dataset yang sesuai dengan kebutuhan masing-masing teknik:
+This project uses datasets suitable for each technique:
 
 ### Clustering
-- `data_clustering (2).csv` - Dataset utama untuk analisis clustering
-- `data_clustering_inverse (6).csv` - Dataset hasil inverse transformation dari proses normalisasi
+- `data_clustering (2).csv` - Main dataset for clustering analysis
+- `data_clustering_inverse (6).csv` - Inverse transformed dataset from normalization process
 
-### Klasifikasi
-- Dataset untuk klasifikasi (embedded dalam notebook atau diunduh otomatis)
+### Classification
+- Dataset for classification (embedded in notebook or automatically downloaded)
 
-> **Catatan**: Dataset clustering sudah tersedia dalam repository. Pastikan path dataset sesuai saat menjalankan notebook.
+> **Note**: Clustering datasets are already available in the repository. Make sure the dataset paths are correct when running the notebooks.
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 
-### Bahasa Pemrograman
+### Programming Language
 - Python 3.8+
 
 ### Libraries
@@ -99,12 +99,12 @@ Proyek ini menggunakan dataset yang sesuai dengan kebutuhan masing-masing teknik
   
 - **Machine Learning**:
   - Scikit-learn
-  - TensorFlow/Keras (untuk save/load model .h5)
+  - TensorFlow/Keras (for save/load .h5 models)
   
 - **Development**:
   - Jupyter Notebook
 
-## 🚀 Instalasi
+## 🚀 Installation
 
 ### 1. Clone Repository
 
@@ -113,7 +113,7 @@ git clone https://github.com/maaulidna/proyek-machine-learning-pemula.git
 cd proyek-machine-learning-pemula
 ```
 
-### 2. Buat Virtual Environment (Opsional tapi Disarankan)
+### 2. Create Virtual Environment (Optional but Recommended)
 
 ```bash
 # Windows
@@ -131,98 +131,98 @@ source venv/bin/activate
 pip install numpy pandas matplotlib seaborn scikit-learn jupyter tensorflow
 ```
 
-> **Catatan**: TensorFlow/Keras diperlukan untuk loading model .h5
+> **Note**: TensorFlow/Keras is required for loading .h5 model files
 
-Atau jika ada file requirements.txt:
+Or if you have a requirements.txt file:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 💻 Cara Menggunakan
+## 💻 Usage
 
-### Menjalankan Notebook
+### Running Notebooks
 
-1. Buka Jupyter Notebook:
+1. Open Jupyter Notebook:
 ```bash
 jupyter notebook
 ```
 
-2. Pilih notebook yang ingin dijalankan:
-   - `[Clustering]_Submission_Akhir_BMLP_MC009d5X2352 (2).ipynb` untuk analisis clustering
-   - `[Klasifikasi]_Submission_Akhir_BMLP_MC009D5X2352 (4).ipynb` untuk analisis klasifikasi
+2. Select the notebook you want to run:
+   - `[Clustering]_Submission_Akhir_BMLP_MC009d5X2352 (2).ipynb` for clustering analysis
+   - `[Klasifikasi]_Submission_Akhir_BMLP_MC009D5X2352 (4).ipynb` for classification analysis
 
-3. Jalankan cell secara berurutan (Shift + Enter)
+3. Run cells sequentially (Shift + Enter)
 
-### Workflow Umum
+### General Workflow
 
-#### Untuk Clustering:
-1. **Data Loading**: Import dan load dataset
-2. **Exploratory Data Analysis (EDA)**: Analisis dan visualisasi data
-3. **Data Preprocessing**: Cleaning, normalisasi, dan transformasi
-4. **Clustering**: Implementasi algoritma (K-Means, DBSCAN, dll.)
-5. **Evaluation**: Evaluasi menggunakan metrik seperti Silhouette Score, Elbow Method
-6. **Visualization**: Visualisasi cluster hasil
+#### For Clustering:
+1. **Data Loading**: Import and load dataset
+2. **Exploratory Data Analysis (EDA)**: Analyze and visualize data
+3. **Data Preprocessing**: Cleaning, normalization, and transformation
+4. **Clustering**: Implement algorithms (K-Means, DBSCAN, etc.)
+5. **Evaluation**: Evaluate using metrics like Silhouette Score, Elbow Method
+6. **Visualization**: Visualize resulting clusters
 
-#### Untuk Klasifikasi:
-1. **Data Loading**: Import dan load dataset
-2. **Exploratory Data Analysis (EDA)**: Analisis distribusi kelas dan fitur
+#### For Classification:
+1. **Data Loading**: Import and load dataset
+2. **Exploratory Data Analysis (EDA)**: Analyze class and feature distribution
 3. **Data Preprocessing**: Feature engineering, encoding, scaling
-4. **Train-Test Split**: Pembagian data training dan testing
-5. **Model Training**: Training model klasifikasi
-6. **Evaluation**: Evaluasi menggunakan accuracy, precision, recall, F1-score
-7. **Prediction**: Prediksi pada data baru
+4. **Train-Test Split**: Split data into training and testing sets
+5. **Model Training**: Train classification models
+6. **Evaluation**: Evaluate using accuracy, precision, recall, F1-score
+7. **Prediction**: Make predictions on new data
 
-## 📈 Hasil dan Analisis
+## 📈 Results and Analysis
 
 ### Clustering
-Proyek clustering mengimplementasikan berbagai teknik:
+The clustering project implements various techniques:
 
-- **Dimensionality Reduction**: Menggunakan PCA (Principal Component Analysis)
+- **Dimensionality Reduction**: Using PCA (Principal Component Analysis)
   - Model: `PCA_model_clustering (1).h5`
-  - Tujuan: Mengurangi dimensi fitur untuk visualisasi dan efisiensi komputasi
+  - Purpose: Reduce feature dimensions for visualization and computational efficiency
 
-- **Model Clustering**: 
-  - Model tersimpan: `model_clustering (2).h5`
-  - Menghasilkan pengelompokan data berdasarkan pola yang ditemukan
+- **Clustering Model**: 
+  - Saved model: `model_clustering (2).h5`
+  - Produces data groupings based on discovered patterns
   
-- **Dataset Output**:
-  - `data_clustering_inverse (6).csv` - Data hasil inverse transform untuk interpretasi
+- **Output Dataset**:
+  - `data_clustering_inverse (6).csv` - Inverse transformed data for interpretation
 
-### Klasifikasi
-Proyek klasifikasi mengeksplorasi beberapa algoritma:
+### Classification
+The classification project explores multiple algorithms:
 
 - **Decision Tree**:
   - Model: `decision_tree_model (2).h5`
-  - Algoritma tree-based untuk klasifikasi
+  - Tree-based algorithm for classification
 
 - **Logistic Regression**:
   - Model: `explore_LogisticRegression_classification (2).h5`
-  - Algoritma klasifikasi linear
+  - Linear classification algorithm
 
 - **Hyperparameter Tuning**:
   - Model: `tuning_classification (3).h5`
-  - Model hasil optimasi hyperparameter untuk performa terbaik
+  - Optimized hyperparameter model for best performance
 
-> **Catatan**: Semua model disimpan dalam format .h5 untuk kemudahan deployment dan reusability.
+> **Note**: All models are saved in .h5 format for easy deployment and reusability.
 
-## 🤝 Kontribusi
+## 🤝 Contributing
 
-Kontribusi, issues, dan feature requests sangat diterima! Jangan ragu untuk check [issues page](https://github.com/maaulidna/proyek-machine-learning-pemula/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/maaulidna/proyek-machine-learning-pemula/issues).
 
-### Cara Berkontribusi:
+### How to Contribute:
 
-1. Fork repositori ini
-2. Buat branch baru (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Create a Pull Request
 
-## 📝 Lisensi
+## 📝 License
 
-Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) untuk detail.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Kontak
+## 👤 Contact
 
 **Maulidna**
 
@@ -231,12 +231,12 @@ Proyek ini dilisensikan di bawah MIT License - lihat file [LICENSE](LICENSE) unt
 
 ## 🙏 Acknowledgments
 
-- [Dicoding Indonesia](https://www.dicoding.com/) - Platform pembelajaran
-- [Scikit-learn Documentation](https://scikit-learn.org/) - Referensi algoritma ML
-- Semua kontributor yang telah membantu proyek ini
+- [Dicoding Indonesia](https://www.dicoding.com/) - Learning platform
+- [Scikit-learn Documentation](https://scikit-learn.org/) - ML algorithm reference
+- All contributors who have helped this project
 
 ---
 
-⭐ Jangan lupa berikan star jika proyek ini membantu Anda!
+⭐ Don't forget to give a star if this project helps you!
 
 **#MachineLearning #Python #DataScience #Dicoding**
